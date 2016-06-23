@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1em;
+    line-height: 135%;
+}
+
+a {
+    color: #d38484;
+}
+
+a:hover {
+    color: #efdea0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    -webkit-trasition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Styles for header */
+
+header {
+    width: 98%;
+    float: left;
+    padding: 1%;
+    background-color: #fafafa;
+    border-bottom: 2px solid silver;
+}
+
+header #logo {
+    width: 40%;
+    float: left;
+    color: #939393;
+    font-size: 2em;
+    font-family: Times New Roman, sans-serif;
+}
+
+header #menuHead {
+    width: 30%;
+    float: left;
+}
+
+header #regAuth {
+    width: 30%;
+    float: left;
+    text-align: right;
+}
