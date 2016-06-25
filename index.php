@@ -23,6 +23,20 @@
         </div>
     </header>
 
+    <div id="wrapper">
+        <div id="leftCol">
+
+        </div>
+        <div id="rightCol">
+            <div class="banner">
+                <img src="img/banner_1.jpg" alt="Banner 1" title="Banner 1">
+            </div>
+            <div class="banner">
+                <img src="img/banner_2.jpg" alt="Banner 1" title="Banner 1">
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div id="social">
            <a href="http://vk.com/" target="_blank">

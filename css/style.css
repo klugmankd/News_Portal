@@ -37,6 +37,12 @@ a, a:hover {
     transition: all.6s ease;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
 .clear {
     clear: both;
 }
@@ -45,6 +51,7 @@ a, a:hover {
 
 header {
     border-bottom: 2px solid silver;
+    margin-bottom: 20px;
 }
 
 header, footer {
@@ -104,6 +111,34 @@ header #regAuth {
     float: left;
     text-align: right;
     font-size: 1.3em;
+}
+
+/* Styles for all document */
+
+#wrapper {
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+}
+
+#wrapper #leftCol {
+    width: 70%;
+    margin-right: 10%;
+    float: left;
+}
+
+#wrapper #rightCol {
+    width: 20%;
+    float: left;
+}
+
+#wrapper #rightCol .banner {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    border: 2px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 /* Styles for footer */
