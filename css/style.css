@@ -85,7 +85,7 @@ header #menuHead {
     float: left;
 }
 
-.headerButton {
+.buttonAnimate {
     -webkit-trasition: all.6s ease;
     -moz-transition: all.6s ease;
     -o-transition: all.6s ease;
@@ -121,11 +121,64 @@ header #regAuth {
     margin-left: 10%;
 }
 
+/* Styles for left col*/
+
 #wrapper #leftCol {
     width: 70%;
     margin-right: 10%;
     float: left;
 }
+
+#wrapper #leftCol #bigArticle {
+    width: 78%;
+    margin-left: 10%;
+    background-color: #e8e8e8;
+    padding: 1%;
+    float: left;
+}
+
+#wrapper #leftCol #bigArticle img, #wrapper #leftCol .article img {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#wrapper #leftCol #bigArticle h2, #wrapper #leftCol .article h2 {
+    font-weight: normal;
+    font-size: 1.4em;
+    font-family: Comic Sans MS, sans-serif;
+    color: #636363;
+}
+
+#wrapper #leftCol #bigArticle p, #wrapper #leftCol .article p {
+    width: 90%;
+    margin-left: 5%;
+}
+
+#wrapper #leftCol #bigArticle div, #wrapper #leftCol .article div{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #878787;
+    color: #f7f7f7;
+    width: 15%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#wrapper #leftCol #bigArticle div:hover, #wrapper #leftCol .article div:hover {
+    background-color: #a2a2a2;
+    cursor: pointer;
+}
+
+#wrapper #leftCol .article {
+    width: 40%;
+    margin-left: 5%;
+    background-color: #e8e8e8;
+    padding: 1%;
+    float: left;
+}
+
+/* Styles for right col */
 
 #wrapper #rightCol {
     width: 20%;

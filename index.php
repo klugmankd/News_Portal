@@ -8,14 +8,14 @@
 <body>
     <header>
         <div id="logo">
-            <a class="headerButton" href="/" title="go to main page"><span>N</span>ews</a>
+            <a class="buttonAnimate" href="/" title="go to main page"><span>N</span>ews</a>
         </div>
         <div id="menuHead">
             <a href="about.php">
-                <div class="headerButton" style="margin-right: 5%">About us</div>
+                <div class="buttonAnimate" style="margin-right: 5%">About us</div>
             </a>
             <a href="feedback.php">
-                <div class="headerButton">Feedback</div>
+                <div class="buttonAnimate">Feedback</div>
             </a>
         </div>
         <div id="regAuth">
@@ -25,7 +25,37 @@
 
     <div id="wrapper">
         <div id="leftCol">
-
+            <div id="bigArticle">
+                <img src="img/articles/article_1.jpg" alt="article 1" title="article 1">
+                <h2>Article 1</h2>
+                <p>
+                    Ipsum Lorem - a tekst- "fish" that is used in printing and design. Lorem Ipsum is actually standard "fish" until the XVI century, when an unknown printer took a galley of font and made ​​a selection of her designs fonts.
+                </p>
+                <a href="/article.php">
+                    <div class="buttonAnimate">More</div>
+                </a>
+            </div>
+            <div class="clear"><br></div>
+            <div class="article">
+                <img src="img/articles/article_2.jpg" alt="article 1" title="article 1">
+                <h2>Article 1</h2>
+                <p>
+                    Ipsum Lorem - a tekst- "fish" that is used in printing and design. Lorem Ipsum is actually standard "fish" until the XVI century, when an unknown printer took a galley of font and made ​​a selection of her designs fonts.
+                </p>
+                <a href="/article.php">
+                    <div class="buttonAnimate">More</div>
+                </a>
+            </div>
+            <div class="article">
+                <img src="img/articles/article_3.jpg" alt="article 1" title="article 1">
+                <h2>Article 1</h2>
+                <p>
+                    Ipsum Lorem - a tekst- "fish" that is used in printing and design. Lorem Ipsum is actually standard "fish" until the XVI century, when an unknown printer took a galley of font and made ​​a selection of her designs fonts.
+                </p>
+                <a href="/article.php">
+                    <div class="buttonAnimate">More</div>
+                </a>
+            </div>
         </div>
         <div id="rightCol">
             <div class="banner">
