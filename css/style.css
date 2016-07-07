@@ -123,11 +123,20 @@ header #regAuth {
 }
 
 /* Styles for left col*/
+@media (min-width: 800px) {
+    #wrapper #leftCol {
+        width: 70%;
+        margin-right: 10%;
+        float: left;
+    }
+}
 
-#wrapper #leftCol {
-    width: 70%;
-    margin-right: 10%;
-    float: left;
+@media (max-width: 799px) {
+    #wrapper #leftCol {
+        width: 90%;
+        margin-right: 5%;
+        float: left;
+    }
 }
 
 #wrapper #leftCol #bigArticle {
@@ -136,7 +145,9 @@ header #regAuth {
     background-color: #e8e8e8;
     padding: 1%;
     float: left;
+    border-radius: 7px;
 }
+
 
 #wrapper #leftCol #bigArticle img, #wrapper #leftCol .article img {
     width: 100%;
@@ -176,14 +187,25 @@ header #regAuth {
     margin-left: 5%;
     background-color: #e8e8e8;
     padding: 1%;
+    border-radius: 7px;
     float: left;
 }
 
 /* Styles for right col */
 
-#wrapper #rightCol {
-    width: 20%;
-    float: left;
+@media (min-width: 800px) {
+    #wrapper #rightCol {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (max-width: 799px) {
+    #wrapper #rightCol {
+        width: 80%;
+        margin-left: 5%;
+        float: left;
+    }
 }
 
 #wrapper #rightCol .banner {
@@ -214,6 +236,7 @@ header #regAuth {
 #wrapper #leftCol input#done:hover {
     border: 2px solid #f8d881;
     cursor: pointer;
+    outline: none;
 }
 
 #wrapper #leftCol textarea {
@@ -228,6 +251,14 @@ header #regAuth {
     color: #989898;
     margin-bottom: 10px;
     font-size: 1.2em;
+}
+
+#wrapper #leftCol #messageShow {
+    font-size: 1.2em;
+    float: left;
+    color: rgba(250, 87, 87, 0.88);
+    width: 100%;
+    text-align: center;
 }
 
 /* Styles for page about.php */
@@ -257,6 +288,7 @@ footer #social img {
     height: 30px;
     float: left;
     padding: 3px;
+    cursor: pointer;
 }
 
 footer #rights {

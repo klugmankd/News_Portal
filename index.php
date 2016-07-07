@@ -2,45 +2,35 @@
 <html>
 <head>
     <?php
+        include_once ("models/dataModel.php");
         define(TITLE, "News about everything");
         include_once ("views/head.php");
+        $news = getNews(3);
     ?>
 </head>
 <body>
     <?php include_once ("views/header.php")?>
     <div id="wrapper">
         <div id="leftCol">
-            <div id="bigArticle">
-                <img src="img/articles/article_1.jpg" alt="article 1" title="article 1">
-                <h2>Article 1</h2>
-                <p>
-                    Ipsum Lorem - a tekst- "fish" that is used in printing and design. Lorem Ipsum is actually standard "fish" until the XVI century, when an unknown printer took a galley of font and made ​​a selection of her designs fonts.
-                </p>
-                <a href="/article.php">
-                    <div class="buttonAnimate">More</div>
-                </a>
-            </div>
-            <div class="clear"><br></div>
-            <div class="article">
-                <img src="img/articles/article_2.jpg" alt="article 1" title="article 1">
-                <h2>Article 1</h2>
-                <p>
-                    Ipsum Lorem - a tekst- "fish" that is used in printing and design. Lorem Ipsum is actually standard "fish" until the XVI century, when an unknown printer took a galley of font and made ​​a selection of her designs fonts.
-                </p>
-                <a href="/article.php">
-                    <div class="buttonAnimate">More</div>
-                </a>
-            </div>
-            <div class="article">
-                <img src="img/articles/article_3.jpg" alt="article 1" title="article 1">
-                <h2>Article 1</h2>
-                <p>
-                    Ipsum Lorem - a tekst- "fish" that is used in printing and design. Lorem Ipsum is actually standard "fish" until the XVI century, when an unknown printer took a galley of font and made ​​a selection of her designs fonts.
-                </p>
-                <a href="/article.php">
-                    <div class="buttonAnimate">More</div>
-                </a>
-            </div>
+            <?php
+                for ($i = 0; $i < count($news); $i++) {
+                    if ($i == 0) {
+                        echo "<div id='bigArticle'>";
+                    } else echo "<div class='article'>";
+            ?>
+            <img src="img/articles/article_<?=$news[$i]['id']?>.jpg" alt="article<?=$news[$i]['id']?>" title="article <?=$news[$i]['id']?>">
+                    <h2><?=$news[$i]['title']?></h2>
+                    <p><?=$news[$i]['intro_text']?></p>
+                    <a href="article.php?id=<?=$news[$i]['id']?>">
+                        <div class="buttonAnimate">More</div>
+                    </a>
+                    </div>
+            <?php
+                if ($i == 0) {?>
+                   <div class="clear"><br></div>
+            <?php }
+                }
+            ?>
         </div>
         <?php include_once ("views/rightCol.php")?>
     </div>

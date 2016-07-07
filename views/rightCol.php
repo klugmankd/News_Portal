@@ -5,4 +5,7 @@
     <div class="banner">
         <img src="img/banner_2.jpg" alt="Banner 2" title="Banner 2">
     </div>
+    <div class="banner">
+        <img src="img/banner_2.jpg" alt="Banner 2" title="Banner 2">
+    </div>
 </div>
