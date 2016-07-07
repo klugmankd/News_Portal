@@ -195,6 +195,16 @@ header #regAuth {
     border-radius: 5px;
 }
 
+/* Styles for page about.php */
+
+#wrapper #leftCol #about_us {
+    width: 76%;
+    margin-left: 10%;
+    border: 1px solid silver;
+    background-color: #f4f4f4;
+    padding: 2%;
+}
+
 /* Styles for footer */
 
 footer {

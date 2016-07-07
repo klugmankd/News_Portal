@@ -1,6 +1,6 @@
 <header>
     <div id="logo">
-        <a class="buttonAnimate" href="/" title="go to main page"><span>N</span>ews</a>
+        <a class="buttonAnimate" href="index.php" title="go to main page"><span>N</span>ews</a>
     </div>
     <div id="menuHead">
         <a href="about.php">
